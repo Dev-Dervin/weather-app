@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'sans-serif', 'Arial';
+}
+
+body{
+    background: #222;
+}
+
+.card{
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    border-radius: 1rem;
+    margin: min(10%, 5rem) auto 0;
+    color: #fff;
+    width: 90%;
+    max-width: 450px;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.search{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.search input{
+    border: 0;
+    outline: 0;
+    width: 80%;
+    padding: 1rem;
+    margin-right: 1rem;
+    height: 3rem;
+    border-radius: 3rem;
+    box-shadow: 0 0 0.3rem #2f2f2f;
+}
+
+.search button{
+    border: 0;
+    outline: 0;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 0 0.3rem #2f2f2f;
+}
+
+.search button img{
+    height: 50%;
+}
+
+.cloud{
+    max-width: 45%;
+    height: auto;
+}
+
+.temp{
+    font-size: 4rem;
+}
+
+.city{
+    font-size: 2rem;
+}
+
+.status{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.status i{
+    font-size: 2rem;
+}
+
+.wind, .humidity{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+@media (max-width:355px) {
+    .temperature{
+        font-size: 3rem;
+    }
+    
+    .city{
+        font-size: 1rem;
+    }
+
+    .status i{
+        font-size: 1.5rem;
+    }
+
+    .humidity h2, .wind h2{
+        font-size: 1rem;
+    }
+
+    p{
+        font-size: .75rem;
+    }
+}
