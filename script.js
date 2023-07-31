@@ -1,7 +1,12 @@
 const APIkey = 'c571c7fe39b869a406ab7e98d2f009c5';
 const apiURL = 'https://api.openweathermap.org/data/2.5/weather?units=metric'
 
+
+//Default city set to Manila
 const input = document.querySelector('input');
+input.value = 'Manila';
+
+checkWeather();
 
 const button = document.querySelector('button');
 
