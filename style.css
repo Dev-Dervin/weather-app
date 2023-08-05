@@ -25,6 +25,7 @@ body{
     justify-content: space-between;
     width: 100%;
     align-items: center;
+    position: relative;
 }
 
 .search input{
@@ -85,6 +86,34 @@ body{
     gap: 1rem;
 }
 
+.suggestions{
+    border-radius: 1rem;
+    background: #fff;
+    width: 100%;
+    top: 120%;
+    position: absolute;
+    box-shadow: 0 0 0.3rem #2f2f2f;
+}
+
+.suggestions li{
+    text-decoration: none;
+    list-style: none;
+    color: #222;
+}
+
+.suggestions li:hover{
+    background-color: #b1afaf;
+    cursor: pointer;
+}
+
+li:first-child:hover{
+    border-radius: 1rem 1rem 0 0;
+}
+
+li:last-child:hover{
+    border-radius: 0 0 1rem 1rem;
+}
+
 @media (max-width:430px) {
     .temp{
         font-size: 3rem;
@@ -112,7 +141,7 @@ body{
         font-size: 1.5rem;
     }
 
-    .humid, .windspeed{
+    .humid, .windspeed, li{
         font-size: 0.90rem;
     }
 
@@ -126,7 +155,7 @@ body{
         padding: 1rem;
     }
 
-    .humid, .windspeed{
+    .humid, .windspeed, li{
         font-size: 0.75rem;
     }
 
